@@ -11,9 +11,9 @@ help = <b>Usage instructions.</b>
     
     Add me to your channel as administrator, with "add users" permission, and forward me a message from that chat to set me up!
 
-usage-help = How to use me ❓
+usage-help = HOW TO USE ME ??
 
-updates = Updates
+updates = UPDATE CHANNEL 📢
 
 no-perms = Either I am not added in the chat as admin, or you are not an admin in the chat!
 
