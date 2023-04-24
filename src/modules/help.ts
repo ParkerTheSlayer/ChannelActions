@@ -34,7 +34,7 @@ composer.callbackQuery(/add_to_(.*)/, async (ctx) => {
       reply_markup: new InlineKeyboard()
         .url(
           `Add To ${channelOrGroup}`,
-          `https://t.me/${ctx.me.username}?start${channelOrGroup}=ApproveUserBot&admin=invite_users+manage_chat`,
+          `https://t.me/${ctx.me.username}?start${channelOrGroup}=by_BotzHub&admin=invite_users+manage_chat`,
         )
         .text("DONE ✅", `select_${channelOrGroup}`).row()
         .text("« BACK", "mainMenu"),
