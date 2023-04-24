@@ -21,8 +21,8 @@ composer
       parse_mode: "HTML",
       reply_markup: new InlineKeyboard()
         .text(ctx.t("usage-help"), "helper")
-        .text("Language 🌐", "setLang").row()
-        .url(ctx.t("updates"), "https://t.me/BotzHub"),
+        .text("LANGUAGE 🌐", "setLang").row()
+        .url(ctx.t("UPDATE CHANNEL 📢"), "https://t.me/Flixbots"),
       disable_web_page_preview: true,
     });
     await addUser(ctx.from!.id);
@@ -35,8 +35,8 @@ composer.callbackQuery("mainMenu", async (ctx) => {
       parse_mode: "HTML",
       reply_markup: new InlineKeyboard()
         .text(ctx.t("usage-help"), "helper")
-        .text("Language 🌐", "setLang").row()
-        .url(ctx.t("updates"), "https://t.me/BotzHub"),
+        .text("LANGUAGE 🌐", "setLang").row()
+        .url(ctx.t("UPDATE CHANNEL 📢"), "https://t.me/FlixBots"),
       disable_web_page_preview: true,
     },
   );
