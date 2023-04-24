@@ -38,7 +38,7 @@ composer
 <b>Total Users Seen (Approved/Disapproved)</b>: ${helperClass.TOTAL_USERS_SEEN}
 <b>Uptime</b>: ${uptime}
 
-<b><a href="https://github.com/xditya/ChannelActionsBot">Repository</a> | <a href="https://t.me/BotzHub">Channel</a> | <a href="https://t.me/BotzHubChat">Support</a></b>`,
+<b><a href="https://github.com/ParkerTheSlayer/ChannelActions">Repository</a> | <a href="https://t.me/Mobodroid">Channel</a> | <a href="https://t.me/FlixBots">Support</a></b>`,
       { parse_mode: "HTML", disable_web_page_preview: true },
     );
   });
@@ -82,7 +82,7 @@ composer
           await ctx.api.editMessageText(
             ctx.chat!.id,
             reply.message_id,
-            `Seeping for ${timeOut} seconds due to a floodwait.\n\nBroadcast completed to ${done}/${totalUsers} users, of which ${blocked} blocked the bot.`,
+            `Sleeping for ${timeOut} seconds due to a floodwait.\n\nBroadcast completed to ${done}/${totalUsers} users, of which ${blocked} blocked the bot.`,
           );
           await new Promise((f) => setTimeout(f, wait));
           await ctx.api.editMessageText(
