@@ -22,7 +22,7 @@ composer
       reply_markup: new InlineKeyboard()
         .text(ctx.t("usage-help"), "helper")
         .text("LANGUAGE 🌐", "setLang").row()
-        .url(ctx.t("UPDATE CHANNEL 📢"), "https://t.me/Flixbots"),
+        .url(ctx.t("updates"), "https://t.me/Flixbots"),
       disable_web_page_preview: true,
     });
     await addUser(ctx.from!.id);
@@ -36,7 +36,7 @@ composer.callbackQuery("mainMenu", async (ctx) => {
       reply_markup: new InlineKeyboard()
         .text(ctx.t("usage-help"), "helper")
         .text("LANGUAGE 🌐", "setLang").row()
-        .url(ctx.t("UPDATE CHANNEL 📢"), "https://t.me/FlixBots"),
+        .url(ctx.t("updates"), "https://t.me/FlixBots"),
       disable_web_page_preview: true,
     },
   );
