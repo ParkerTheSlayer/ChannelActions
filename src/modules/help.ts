@@ -11,8 +11,8 @@ composer.callbackQuery("helper", async (ctx) => {
         "\n\nTo approve members who are already in waiting list, upgrade to premium! Contact @flixhelpbot for information on pricing.",
       {
         reply_markup: new InlineKeyboard()
-          .text("ADD ME TO CHANNEL", "add_to_channel")
-          .text("ADD ME TO GROUP", "add_to_group")
+          .text("ADD ME TO CHANNEL", "add_to_Channel")
+          .text("ADD ME TO GROUP", "add_to_Group")
           .row()
           .text(
             "MAIN MENU 📭",
@@ -34,7 +34,7 @@ composer.callbackQuery(/add_to_(.*)/, async (ctx) => {
       reply_markup: new InlineKeyboard()
         .url(
           `Add To ${channelOrGroup}`,
-          `https://t.me/${ctx.me.username}?start${channelOrGroup}=by_BotzHub&admin=invite_users+manage_chat`,
+          `https://t.me/${ctx.me.username}?start${channelOrGroup}=ApproveUserBot&admin=invite_users+manage_chat`,
         )
         .text("DONE ✅", `select_${channelOrGroup}`).row()
         .text("« BACK", "mainMenu"),
